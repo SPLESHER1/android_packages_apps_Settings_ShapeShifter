@@ -41,8 +41,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @SearchIndexable
-public class Themer extends DashboardFragment implements Indexable  {
-    private static final String TAG = "Themer";
+public class PrebuiltFonts extends DashboardFragment implements Indexable  {
+    private static final String TAG = "PrebuiltFonts";
 
     @Override
     public int getMetricsCategory() {
@@ -56,7 +56,7 @@ public class Themer extends DashboardFragment implements Indexable  {
 
     @Override
     protected int getPreferenceScreenResId() {
-        return R.xml.themer;
+        return R.xml.themer_fonts;
     }
 
     @Override
@@ -68,9 +68,7 @@ public class Themer extends DashboardFragment implements Indexable  {
             Context context, Lifecycle lifecycle, Fragment fragment) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.adaptive_icon_shape"));
-        controllers.add(new OverlayCategoryPreferenceController(context,
-                "android.theme.customization.icon_pack"));
+                "android.theme.customization.font"));
         return controllers;
     }
 
@@ -83,7 +81,7 @@ public class Themer extends DashboardFragment implements Indexable  {
                             new ArrayList<SearchIndexableResource>();
 
                     SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = R.xml.themer;
+                    sir.xmlResId = R.xml.themer_fonts;
                     result.add(sir);
                     return result;
                 }

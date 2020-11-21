@@ -455,4 +455,8 @@
     <string name="prebuilt_accents_summary">Choose an accent to apply system-wide</string>
     <string name="themes_preview_button_text">ShapeShift</string>
 
+    <!-- Font picker -->
+    <string name="prebuilt_fonts_title">Fonts</string>
+    <string name="prebuilt_fonts_summary">Choose a font to apply throughout the SystemUI</string>
+
 </resources>

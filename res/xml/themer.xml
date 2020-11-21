@@ -33,12 +33,10 @@
        android:key="android.theme.customization.icon_pack"
        android:title="@string/theme_customization_sysui_icons_title"/>
 
-    <ListPreference
-       android:layout="@layout/fonts_base_preview"
-       android:selectable="false" />
-
-    <ListPreference
-       android:key="android.theme.customization.font"
-       android:title="@string/theme_customization_font_title"/>
+    <Preference
+        android:key="prebuilt_fonts_key"
+        android:title="@string/prebuilt_fonts_title"
+        android:summary="@string/prebuilt_fonts_summary"
+        android:fragment="com.ssos.shapeshifter.fragments.ui.PrebuiltFonts" />
 
 </PreferenceScreen>
